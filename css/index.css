@@ -30,6 +30,7 @@ header{
     min-width: 1000px;
     position: relative;
     background: #2a2f3b;
+    z-index: 5;
 }
 header li a{
     font-size: 14px;
@@ -81,6 +82,7 @@ header .logo .icon-logo{
     top: 57px;
     color: #404A58;
     z-index: 6;
+    display:none;
 }
 .panel-container .panel-item{
     font-size: 12px;
@@ -119,4 +121,161 @@ header .logo .icon-logo{
     height: 0;
     content: '';
     border: 8px dashed transparent;
+}
+
+/*banner部分样式*/
+.banner{
+    margin-top: -65px;
+}
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+.banner-item{
+    background-color: rgb(31, 37, 49);
+    background-size: 170% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+}
+.banner-item:nth-child(2){
+    background-image: url("../images/banner1.png");
+}
+.banner-item:nth-child(3){
+    background-image: url("../images/banner2.jpg");
+}
+.banner-item:nth-child(4){
+    background-image: url("../images/banner3.png");
+}
+.banner-item:nth-child(5){
+    background-image: url("../images/banner4.png");
+}
+.banner-item:nth-child(6){
+    background-image: url("../images/banner5.png");
+}
+.item-content{
+    position: absolute;
+    top: 38%;
+    left: 50px;
+    color: #fafafa;
+}
+.item-content h2{
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 2.5%;
+    line-height: 60px;
+}
+.item-content p{
+    font-size: 18px;
+    line-height: 36px;
+}
+.item-content .btn{
+    margin-top: 45px;
+}
+.item-content .btn a{
+    width: 190px;
+    height: 43px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 43px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: inline-block;
+    -webkit-transition: all 0.15s ease ;
+    -moz-transition: all 0.15s ease ;
+    -ms-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease ;
+    transition: all 0.15s ease ;
+}
+.item-content .btn a:hover{
+    background-color: #FFFFFF;
+    color: #333333;
+}
+/*重置banner分页器样式*/
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 25px;
+}
+.swiper-pagination-bullet{
+    width: 30px;
+    height: 3px;
+    display: inline-block;
+    border-radius: 0;
+    background: #fff;
+    opacity: .3;
+}
+.swiper-pagination-bullet-active{
+    background: #fff;
+    opacity: 1;
+}
+.swiper-button-prev{
+    left: 20px;
+}
+.swiper-button-next{
+    right: 20px;
+}
+.swiper-button-next, .swiper-button-prev{
+    -webkit-transition: opacity 0.35s ease;
+    -moz-transition: opacity 0.35s ease ;
+    -ms-transition: opacity 0.35s ease;
+    -o-transition: opacity 0.35s ease;
+    transition: opacity 0.35s ease ;
+    opacity: 0;
+}
+.banner:hover .swiper-button-next,.banner:hover .swiper-button-prev{
+    opacity:1;
+}
+/*云产品部分样式*/
+.cloud-pro{
+    width: 100%;
+    padding: 45px 10px 50px;
+}
+.cloud-pro .title{
+    font-size: 24px;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.pro-container{
+    width: 1180px;
+    margin: auto;
+}
+.pro-container ul{
+    overflow: hidden;
+}
+.pro-container li{
+    display: inline-block;
+    width: 20%;
+    /* background-color: #e2e2e2; */
+    float: left;
+    margin-top: 34px;
+    padding: 15px 0;
+}
+.pro-container li .pro-icon{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 15px;
+}
+.pro-container li .pro-icon img{
+    width: 100%;
+}
+.pro-icon-active{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.pro-container li p{
+    color: #666666;
+    font-size: 18px;
+    text-align: center;
+}
+.pro-container li:hover{
+    cursor: pointer;
+}
+.pro-container li:hover .pro-icon-active{
+    opacity: 1;
+}
+.pro-container li:hover p{
+    color: #00a4ff;
 }
