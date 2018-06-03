@@ -1,0 +1,127 @@
+.list-part{
+    background: #f2f3f5;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.list-part-wrapper{
+    background-color: #FFFFFF;
+}
+ul.list-wrapper{
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #FFFFFF;*/
+    padding: 6px 0 26px 0;
+    overflow: hidden;
+}
+ul.list-wrapper>li{
+    padding: 26px 0 0 5px;
+    list-style: none;
+    float: left;
+}
+.list-item{
+    width: 240px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    border: 1px solid #e8e8e8;
+    position: relative;
+}
+.list-item:hover{
+    margin-bottom: 1px;
+    margin-top: -1px;
+    box-shadow: -4px 10px 10px -2px rgba(4,0,0,.15);
+}
+.img-box{
+    margin-top: 16px;
+    height: 104px;
+    background: url(../images/server-icon.jpg) no-repeat top center;
+    background-position: 78px -1646px;
+}
+.list-item>p{
+    font-size: 24px;
+    color: #ff7800;
+    text-align: center;
+    line-height: 34px;
+}
+.list-item>p>.time{
+    margin-left: -8px;
+    font-size: 14px;
+    color: #999;
+}
+.list-item .detail{
+    padding: 16px 0 0 26px;
+    text-align: left;
+}
+.detail .name{
+    display: inline-block;
+    width: 50px;
+    color: #555555;
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.value{
+    /*display: inline-block;*/
+    padding-right: 8px;
+    padding-top: 8px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+.btn-box{
+    text-align: center;
+    padding-top: 10px;
+}
+.btn-box>a{
+    display: inline-block;
+    width: 190px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #2087ef;
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #2087ef;
+    -webkit-transition: all .3s linear ;
+    -moz-transition: all .3s linear ;
+    -ms-transition: all .3s linear ;
+    -o-transition: all .3s linear ;
+    transition: all .3s linear ;
+}
+.btn-box>a:hover{
+    border: 1px solid #2087ef;
+    background-color: #2087ef;
+    color: #FFFFFF;
+}
+.list-item .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 32px solid #ff0025;
+    border-bottom: 32px solid transparent;
+    border-left:32px solid transparent;
+}
+.list-item .icon:after{
+    background-size: 20px 20px;
+    position: absolute;
+    right: -28px;
+    width: 32px;
+    display: inline-block;
+    top: -24px;
+    color: #fff;
+}
+.list-item .icon.icon-new{
+    border: 32px solid #4edd4f;
+    border-bottom: 32px solid transparent;
+    border-left:32px solid transparent;
+}
+.list-item .icon.icon-new:after{
+    content: 'New';
+}
+.list-item .icon.icon-hot:after{
+    content: '热销';
+}
