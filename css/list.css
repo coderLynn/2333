@@ -6,9 +6,11 @@
 }
 .list-part-wrapper{
     background-color: #FFFFFF;
+    max-width: 1190px;
+    margin: auto;
 }
 ul.list-wrapper{
-    width: 990px;
+    /*width: 990px;*/
     margin-left: auto;
     margin-right: auto;
     /*background-color: #FFFFFF;*/
@@ -16,12 +18,12 @@ ul.list-wrapper{
     overflow: hidden;
 }
 ul.list-wrapper>li{
-    padding: 26px 0 0 5px;
+    padding: 26px 0 0 26px;
     list-style: none;
     float: left;
 }
 .list-item{
-    width: 240px;
+    width: 262px;
     margin: 0 auto;
     padding-bottom: 24px;
     border: 1px solid #e8e8e8;
@@ -124,4 +126,15 @@ ul.list-wrapper>li{
 }
 .list-item .icon.icon-hot:after{
     content: '热销';
+}
+@media screen and (max-width: 1200px) {
+    ul.list-wrapper{
+        width: 990px;
+    }
+    ul.list-wrapper>li{
+        padding: 26px 0 0 5px;
+    }
+    .list-item{
+        width: 240px;
+    }
 }

@@ -10,9 +10,10 @@
 }
 .banner-item{
     background-color: rgb(31, 37, 49);
-    background-size: 170% 100%;
+    /*background-size: 170% 100%;*/
+    background-size: 1920px 500px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     color: #FFFFFF;
 }
 .banner-item:nth-child(2){
@@ -34,6 +35,7 @@
     position: absolute;
     top: 38%;
     left: 50px;
+    left: 160px;
     color: #fafafa;
 }
 .item-content h2{
@@ -150,6 +152,9 @@
 .pro-container li:hover{
     cursor: pointer;
 }
+.pro-container li:hover .pro-icon .img{
+    opacity: 0;
+}
 .pro-container li:hover .pro-icon-active{
     opacity: 1;
 }
@@ -176,11 +181,11 @@
     background-size: cover;
     background-position: center top;
     top: 0;
-    -webkit-transition: all .4s linear ;
-    -moz-transition: all .4s linear ;
-    -ms-transition: all .4s linear ;
-    -o-transition: all .4s linear ;
-    transition: all .4s linear ;
+    -webkit-transition: all .5s linear ;
+    -moz-transition: all .5s linear ;
+    -ms-transition: all .5s linear ;
+    -o-transition: all .5s linear ;
+    transition: all .5s linear ;
 }
 .work-solution .work-wrapper{
     padding: 45px 10px 50px;
@@ -319,6 +324,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0;
 }
 .satisfactory .item-box li{
     padding: 20px 0 25px;
@@ -368,4 +375,9 @@
 .satisfactory .item-box li:hover span{
     color: #00a4ff;
 }
+@media screen and (max-width: 1200px) {
+    .item-content{                                                                                        left: 50px;
+    }
+}
+
 
