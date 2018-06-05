@@ -553,15 +553,22 @@
         });
 
         //业务解决方案hover效果
+       var leaveIndex ;
         $('.tab li').hover(function () {
-            $('.desc-box .desc').hide();
-            $('.tab li').removeClass('active');
-
             var index = $(this).index();
             var url = $(this).attr('data-img');
             $('.desc-box .desc').eq(index).fadeIn();
             $(this).addClass('active');
             $('.background-item').css({'background-image':'url('+url+')'})
+        },function () {
+            $('.desc-box .desc').stop().hide();
+            $('.tab li').removeClass('active');
+
+             leaveIndex = $(this).index();
+        });
+        $('.tab').mouseleave(function () {
+            $('.desc-box .desc').eq(leaveIndex).fadeIn();
+            $('.tab li').eq(leaveIndex).addClass('active');
         })
     </script>
 </body>
