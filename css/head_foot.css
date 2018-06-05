@@ -184,9 +184,18 @@ header .logo .icon-logo{
     background-size: 1662.5% 1512.5%;
     background-repeat: no-repeat;
 }
-.nav,
-.oprate{
-    /*display: none;*/
+.console{
+    height: 26px;
+    border: 1px solid rgba(255,255,255,.2);
+    line-height: 26px;
+    margin-top: 19px;
+    margin-right: 20px;
+    padding: 0 8px;
+}
+.icon-search:hover{
+    background-position: 99.6% 32.300000000000004%;
+    background-size: 1662.5% 1512.5%;
+    background-repeat: no-repeat;
 }
 .search-wrapper{
     background-color: #2a303c;
