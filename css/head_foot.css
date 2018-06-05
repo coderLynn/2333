@@ -59,6 +59,12 @@ header .nav-content ul{
 header .nav-content ul li{
     float: left;
 }
+.nav-list li{
+
+}
+.nav-list li:hover .panel-container{
+    max-height: 500px;
+}
 header .nav-content .nav,.nav-content .logo{
     float: left;
 }
@@ -86,11 +92,17 @@ header .logo .icon-logo{
     position: absolute;
     top: 57px;
     color: #404A58;
-    z-index: 6;
+    z-index: 4;
     left: 111px;
-    display:none;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
 }
-.panel-container .panel-item{
+ .panel-item{
     font-size: 12px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -105,14 +117,12 @@ header .logo .icon-logo{
     top: 50%;
     border-color: #dedfe0;
     box-shadow: 0 0 5px rgba(0,0,0,.15);
-    /*display: inline-block;*/
     pointer-events: auto;
     overflow-y: auto;
     overflow-x: hidden;
     margin-top: 8px;
-    display:none;
 }
-.panel-container .panel-item:before{
+ .panel-item:before{
     margin-bottom: -8px;
     margin-left: -8px;
     bottom: 100%;
@@ -154,6 +164,11 @@ header .logo .icon-logo{
     text-overflow: ellipsis;
     font-size: 12px;
     color: #333;
+}
+.item a.new:after{
+    content: 'NEW';
+    color: orange;
+    padding-left: 4px;
 }
 .searchBtn{
     float: left;
