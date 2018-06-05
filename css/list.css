@@ -127,6 +127,10 @@ ul.list-wrapper>li{
 .list-item .icon.icon-hot:after{
     content: '热销';
 }
+.intro-box{
+    min-height: 200px;
+    border: 1px solid green;
+}
 @media screen and (max-width: 1200px) {
     ul.list-wrapper{
         width: 990px;
